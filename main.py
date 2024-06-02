@@ -9,6 +9,18 @@ from models.ShippersModel import ShippersModel
 app=FastAPI()
 obj=ShippersServices()
 
+@app.get("/Index",tags=["FAST API with simple CURD"])
+async  def welcome():
+    return "Welcome to Fast API" 
+
+@app.get("/About",tags=["FAST API with simple CURD"])
+async  def welcome():
+    return "FastAPI serve as frameworks for building web APIs in Python." 
+
+@app.get("/Contactus",tags=["FAST API with simple CURD"])
+async  def welcome():
+    return "https://fastapi.tiangolo.com/tutorial/" 
+
 @app.get("/",tags=["FAST API with simple CURD"])
 async  def welcome():
     return "Welcome to Fast API" 
